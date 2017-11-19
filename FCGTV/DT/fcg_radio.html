@@ -1,0 +1,77 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui" />
+<meta name="format-detection" content="telephone=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta charset="utf-8">
+<title>防城港人民广播电台</title>
+<link rel="stylesheet" type="text/css" href="guanDScss/common.css"/>
+<link href="guanDScss/DiBu.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery172.js"></script>
+<script type="text/javascript" src="js/action.js"></script>
+</head>
+
+<body>
+<!--header/begin-->
+<div id="header">
+<div class="logo"><a href="http://about.guanair.com/FCGTV/fcgtvtz.html"><img src="guanDScss/fcgtvlogo.jpg" ></a></div>
+</div>
+<!--header/end-->
+
+<!--content/begin-->
+<div id="content" >
+<div class="close_light_bg" id="close_light_bg"></div>
+
+<!--L1 CrossPlatform /begin -->
+<div class="video" id="CuPlayer" >
+<SCRIPT LANGUAGE=JavaScript>
+<!--
+/*
+* 跨平台方案X1（基于普通HTTP协议）=============
+* @param {Object} vID        ID
+* @param {Object} vWidth     播放器宽度设置
+* @param {Object} vHeight    播放器高度设置
+* @param {Object} vFile      播放器配置文件
+* @param {Object} vPlayer    播放器文件
+* @param {Object} vPic       视频缩略图
+* @param {Object} vCssurl    移动端CSS应用文件
+* @param {Object} vServer    RTMP服务器地址
+* @param {Object} vMp4url    RTMP视频文件地址
+* @param {Object} vIosurl    视频文件地址
+
+* 跨平台方案X1说明=============
+* 本实例请在IIS/Apache等网站环境下测试
+* 本实例主要为了实现直播的跨平台
+* 本实例要求用户有RTMP流媒体环境/并且实现M3u8流
+*/
+var vID        = ""; 
+var vWidth     = "100%";            //播放器宽度设置
+var vHeight    = 400;               //播放器高度设置
+var vFile      = "fcgtvpeizhi.xml";  //播放器配置文件
+var vPlayer    = "player.swf?v=4.0";//播放器文件
+var vPic       = "guanDScss/tb.png";//视频缩略图
+var vCssurl    = "guanDScss/mini.css"; //移动端CSS应用文件
+//PC端,安卓端,wp
+var vServer    = "rtmp://fcgtv.guanair.com:10190/live"; //RTMP直播服务器地址
+var vMp4url    = "livestream";                   //RTMP视频文件地址
+//iOS端(以下地址为m3u8地址)
+var vIosurl    = "http://fcgtv.guanair.com:10190/live/livestream/playlist.m3u8"; //视频文件地址
+//-->
+</SCRIPT> 
+<script class="CuPlayerVideo" data-mce-role="CuPlayerVideo" type="text/javascript" src="js/CuSunX2.min.js"></script>
+</div>
+<!--L1 CrossPlatform /end -->
+<div class="title"></div>
+<div id="DiBu"></br>关注“防城港电视台”微信公众号，发现更多精彩</br></br>
+<img src="guanDScss/fcgtvewm.png" width="260" height="143" alt=""/></br></br>
+<a href="https://www.wjx.top/jq/16227337.aspx">点击此处反馈意见</a></div>
+<div style="display:none">
+<script src="https://s19.cnzz.com/z_stat.php?id=1263596183&web_id=1263596183" language="JavaScript"></script>
+</div>
+
+</div>
+
+
+</body>
+</html>
